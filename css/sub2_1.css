@@ -1,0 +1,309 @@
+/* sub3_1 style */
+
+/* 전체초기화 */
+* { margin: 0; padding: 0; }
+li { list-style-type: none; }
+a { text-decoration: none; color: #2e2e2e;}
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #2e2e2e;
+    font-size: 16px;
+}
+
+/* font */
+@font-face {
+    font-family:'Breton-Bold';
+    src: url('../font/Breton-Bold.ttf');
+  }
+
+/* header */
+#main_header {
+    position: relative;
+    width: 1200px; height: 100px;
+    /* background-color: #ccc; */
+    /* border: 1px solid red; */
+    margin: 0 auto;
+}
+
+#main_header > #logo > a > img{
+    width: 57px; height: 61px;
+    margin-top: 20px;
+}
+
+/* gnb */
+#main_header > #gnb {
+    position: absolute;
+    width: 662px; height: 34px;
+    top: 34px; left: 298px;
+    z-index: 1;
+}
+#main_header > #gnb > .depth1 { overflow: hidden; }
+#main_header > #gnb > .depth1 > li { 
+    float: left; 
+    width: calc(100% / 5);
+    text-align: center;
+    padding-top: 5px;
+}
+#main_header > #gnb > .depth1 > li > a {
+    padding-bottom: 5px;
+}
+
+    /* 2단계 메뉴 */
+    #main_header > #gnb > .depth1 {
+        background-color: #fff;
+    }
+    #main_header > #gnb .depth2 > li {
+        /* border: 1px solid red; */
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    #main_header > #gnb .depth2 > li:last-child {
+        padding-bottom: 20px;
+    }
+    #main_header > #gnb .depth2 > li:first-child {
+        padding-top: 37px;
+    }
+    #main_header > #gnb .depth2 {
+        display: none;
+    }
+    #main_header > #gnb .depth2 > li > a {
+        font-size: 14px;
+        color: #999;
+        transition-duration: 0.5s;
+    }
+    
+/*gnb hover */
+#main_header > #gnb > .depth1 > li > a:hover {
+    border-bottom: 3px solid #873d3b;
+}
+#main_header > #gnb .depth2 > li > a:hover {
+    color: #2e2e2e;
+}
+
+/* lnb */
+#lnb {
+    position: absolute;
+    top: 37px; right: 0;
+    /* width: 129px; height: 38px; */
+}
+#lnb > ul > li {
+    float: left;
+    margin-left: 11px;
+}
+#lnb > ul > li:first-child { margin-left: 0px; }
+#lnb > ul > li > a > img {
+    width: 26px; height: 26px;
+}
+
+/* title 영역 */
+#title {
+    max-width: 100%;
+    min-width: 1200px;
+    height: 350px;
+    background-image: url(../images/slide_img.png);
+    background-size: cover;
+    text-align: center;
+    line-height: 350px;
+    text-transform: uppercase;
+    font-size: 62px;
+    font-family: 'Breton-Bold';
+}
+
+#title > h1 {
+    color: #fff;
+}
+
+.location {
+    width: 1200px; height: 50.5px;
+    margin: 0 auto;
+    line-height: 50.5px;
+    border-bottom: 1px solid #ccc;
+}
+
+.location span {
+    color: #999;
+}
+
+.location > p {
+    float: right;
+}
+
+/* 버튼 영역 */
+.wrap {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 95.5px;
+}
+
+.btn {
+    display: inline-block;
+    width: 135.35px; height: 45px;
+    line-height: 45px;
+    border: 1px solid #666;
+    border-radius: 10px;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.btn:first-child,
+.btn:hover {
+    background: #2e2e2e;
+    color: white;
+}
+
+.btn:last-child {
+    margin-right: 0;
+}
+
+/* visual 영역 */
+#visual {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 30.4px;
+    margin-bottom: 50;
+}
+
+#visual > h1 {
+    font-size: 52px;
+    font-family: 'Breton-Bold';
+    margin-top: 31.7px;
+}
+
+#visual > p {
+    font-size: 20px;
+    margin-top: 29px;
+}
+
+.line {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.bar {
+    width: 2px; height: 200.83px;
+    background: #ccc;
+    margin: 0 auto;
+    margin-top: 93.5px;
+    margin-bottom: 92.7px;
+}
+
+/*article영역*/
+article {
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 32px;
+}
+article .list1 > li {
+    padding: 4px 0;
+    overflow: hidden;
+}
+article .list1 > li > span{
+    font-size: 20px;
+    float: left;
+    width: 900px;
+}
+article .list1 > li > a{
+    font-size: 20px;
+    font-weight: bold;
+    float:left;
+    width: 200px;
+    margin-left: 68px;
+}
+
+article > .list1 {margin-bottom: 40px;}
+
+/*figure영역*/
+#figure {
+    width: 1200px; height: 436px;
+    text-align: center;
+    margin: 0 auto;
+}
+#figure h2 {
+    font-size: 23px;
+}
+#figure p {
+    font-size: 15px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+#figure > .layout > .layout_img {
+    width: 365px; height: 365px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+#figure > .layout > .layout_img:hover > a > img {
+    transform: scale(1.07);
+    transition-duration: 1.5s;
+}
+
+.layout {
+    display: block;
+    width: 400px;
+    float: left;
+    margin-bottom: 95px;
+}
+#figure > .layout > .layout_img img {
+    width: 365px; height: 365px;
+    border-radius: 30px;
+}
+
+/* footer */
+#main_footer {
+    clear: both;
+    overflow: hidden;
+    height: 200px;
+    background-color: #2e2e2e;
+}
+
+#main_footer  > .main_footer {
+    position: relative;
+    width: 1200px; height: 200px;
+    background-color: #2e2e2e;
+    margin: 0 auto;
+}
+
+#main_footer  > .main_footer > #footer_logo {
+    position: absolute;
+    width: 135px; height: 93px;
+    left: 0; top: 49.5px;
+    /* padding-top: 49.5px; */
+}
+
+#main_footer  > .main_footer > #footer_logo img {
+    width: 135px; height: 93px;
+    opacity: 0.6;
+}
+
+#main_footer  > .main_footer > .footer_line1 {
+    position: absolute;
+    top: 58.5px; left: 280.1px;
+    width: 145px; height: 64px;
+    border-left: 1px solid rgba(255, 255, 255, 0.7);
+}
+#main_footer  > .main_footer > .footer_text {
+    position: absolute;
+    top: 46px; left: 446px;
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    font-size: 12px;
+}
+#main_footer  > .main_footer > .footer_text span { color: #fff; }
+#main_footer  > .main_footer > .footer_line2 {
+    position: absolute;
+    top: 58.5px; right: 240.6px; 
+    width: 105px; height: 64px;
+    border-right: 1px solid rgba(255, 255, 255, 0.7);
+    
+}
+#main_footer  > .main_footer > .footer_sns {
+    position: absolute;
+    top: 76px; right: 0;
+    opacity: 0.7;
+}
+#main_footer  > .main_footer > .footer_sns > a > img {
+    margin-left: 15px;
+}
