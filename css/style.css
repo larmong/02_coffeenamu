@@ -97,12 +97,9 @@ body {
 
 /* visual */
 #visual {
-    position: relative;
     width: 100%;
-    max-width: 1920px;
     margin: 0 auto;
     height: 550px;
-    /* border: 1px solid red; */
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -110,7 +107,6 @@ body {
 }
 #visual > .slider_box {
     width: 1920px;
-    /* outline: 1px solid green; */
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -124,6 +120,44 @@ body {
 #visual > .slider_box > .sliders > img {
     display: block;
     float: left;
+}
+
+/* slider pager */
+.pager {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.pager > a {
+    float: left;
+    width: 15px; height: 15px;
+    border-radius: 50%;
+    margin: 5px;
+    background: #fff;
+}
+
+.pager > .active {
+    background: #2e2e2e;
+    width: 35px; height: 15px;
+    border-radius: 30px;
+}
+
+.controls > a {
+    position: absolute;
+}
+
+.controls>.left {
+    left: 360px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.controls>.right {
+    right: 360px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 /* 텍스트 슬라이드 */
@@ -166,7 +200,7 @@ body {
 }
   
 #notice > .notice > .animated > .ani_text:first-child {
-    animation: anim 10s infinite;
+    animation: anim 20s infinite;
 }
 @keyframes anim {
     0%{
@@ -241,8 +275,8 @@ body {
     overflow: hidden;
 }
 #choice > #choice_menu > .choice_menu > .choice_img:hover > a > img {
-    transform: scale(1.07);
-    transition-duration: 1.5s;
+    transform: scale(1.05);
+    transition-duration: 0.7s;
 }
 
 /* membership */
@@ -345,8 +379,8 @@ body {
     border-radius: 30px;
 }
 #new_menu_list > .new_menu_list > .nwe_img:hover > a > img {
-    transform: scale(1.07);
-    transition-duration: 1.5s;
+    transform: scale(1.05);
+    transition-duration: 0.7s;
 }
 
 /* coffee lab */
@@ -545,8 +579,8 @@ body {
 #gallery > .gallery_sns > .sns_zoom10:hover > a > img,
 #gallery > .gallery_sns > .sns_zoom11:hover > a > img,
 #gallery > .gallery_sns > .sns_zoom12:hover > a > img {
-    transform: scale(1.07);
-    transition-duration: 0.8s;
+    transform: scale(1.05);
+    transition-duration: 0.7s;
 }
 
 /* sns_text 전체 텍스트 위치 */
@@ -689,6 +723,7 @@ body {
     top: 58.5px; left: 280.1px;
     width: 145px; height: 64px;
     border-left: 1px solid rgba(255, 255, 255, 0.7);
+    opacity: 0.3;
 }
 #main_footer  > .main_footer > .footer_text {
     position: absolute;
@@ -703,6 +738,7 @@ body {
     top: 58.5px; right: 240.6px; 
     width: 105px; height: 64px;
     border-right: 1px solid rgba(255, 255, 255, 0.7);
+    opacity: 0.3;
     
 }
 #main_footer  > .main_footer > .footer_sns {

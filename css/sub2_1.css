@@ -236,8 +236,8 @@ article > .list1 {margin-bottom: 40px;}
 }
 
 #figure > .layout > .layout_img:hover > a > img {
-    transform: scale(1.07);
-    transition-duration: 1.5s;
+    transform: scale(1.05);
+    transition-duration: 0.7s;
 }
 
 .layout {
@@ -283,6 +283,7 @@ article > .list1 {margin-bottom: 40px;}
     top: 58.5px; left: 280.1px;
     width: 145px; height: 64px;
     border-left: 1px solid rgba(255, 255, 255, 0.7);
+    opacity: 0.3;
 }
 #main_footer  > .main_footer > .footer_text {
     position: absolute;
@@ -297,6 +298,7 @@ article > .list1 {margin-bottom: 40px;}
     top: 58.5px; right: 240.6px; 
     width: 105px; height: 64px;
     border-right: 1px solid rgba(255, 255, 255, 0.7);
+    opacity: 0.3;
     
 }
 #main_footer  > .main_footer > .footer_sns {
