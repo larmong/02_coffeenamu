@@ -1,7 +1,8 @@
-# 02_coffeenamu
+# coffee namu
 coffee namu / Renewal Project
 main / sub1-1 / sub1-3 / sub2-1
 
+https://larmong.github.io/coffeenamu/
 
 <-- 수정사항 ( ver2 / 2020.10.29 ) -->
 1. 메인 페이지 슬라이더 pager UI 추가함
